@@ -21,7 +21,7 @@ body {
   list-style: none;
 }
 
-/*header*/
+/*-----header-------*/
 
 .header {
   background: var(--primary-title-color);
@@ -29,47 +29,49 @@ body {
 .header-logo {
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
 }
 .logo {
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--prymary-text-color);
-}
-.header-link-studio {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--fourth-text-color);
 }
 .header-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--prymary-text-color);
+}
+.header-link:hover {
+  color: var(--fourth-text-color);
 }
 .header-mail-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+.header-mail-link:hover {
   color: var(--fourth-text-color);
 }
 .header-tel-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
+.header-tel-link:hover {
+  color: var(--fourth-text-color);
+}
 
-/*main frist page*/
+/*------main frist page-------*/
 
 .section-one {
   background: var(--second-title-color);
@@ -78,16 +80,17 @@ body {
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
 }
 .main-btn {
   background-color: var(--fourth-text-color);
+  cursor: pointer;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 16);
   display: flex;
   align-items: center;
   text-align: center;
@@ -101,7 +104,7 @@ body {
 .sec-two-title {
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--prymary-text-color);
@@ -109,14 +112,14 @@ body {
 .sec-two-text {
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 .sec-two-about {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--prymary-text-color);
@@ -128,7 +131,7 @@ body {
 .sec-three-title-one {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--prymary-text-color);
@@ -139,7 +142,7 @@ body {
 .sec-three-title-two {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--prymary-text-color);
@@ -147,13 +150,13 @@ body {
 .sec-three-text {
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
-/*footer*/
+/*--------footer--------*/
 
 .footer-page {
   background: var(--second-title-color);
@@ -161,22 +164,18 @@ body {
 .logo-two {
   color: var(--third-text-color);
 }
-.footer-link-one {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--third-text-color);
-}
 .footer-link {
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-link:hover {
+  color: var(--third-text-color);
+}
 
-/*main second page*/
+/*------main second page------*/
 
 .main {
   background: var(--third-title-color);
@@ -190,19 +189,20 @@ body {
 .title-list {
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--prymary-text-color);
 }
 .text-list {
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 .btn {
   background: var(--fourth-title-color);
+  cursor: pointer;
   width: 128px;
   height: 38px;
   left: 576px;
@@ -210,13 +210,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.btn-first {
+.btn:hover {
   background: var(--fourth-text-color);
   color: var(--third-text-color);
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
